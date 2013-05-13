@@ -1,0 +1,19 @@
+<script>
+  // varibale name validator:
+  // http://mothereff.in/js-variables
+  var º = {};
+
+  º.name = "dog";
+  º.say = "Woof!";
+  º.bark = function () {
+    alert("The " + º.name + " says " + º.say);
+  };
+
+  º.change = function() {
+    º.name = prompt('Name');
+    º.say = prompt(º.name + ' Says');
+  }
+</script>
+
+<a href="#" onClick="º.bark();">Say Something</a><br>
+<a href="#" onClick="º.change();">Change animal</a>

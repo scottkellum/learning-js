@@ -1,0 +1,35 @@
+<script>
+  var books = {};
+
+  var myBooks = [
+    "Elements of Typographic Style",
+    "Grid Systems",
+    "Hand to Type",
+    "Designing with Web Standards"
+  ];
+
+  var listLength = myBooks.length;
+  var booksAdded = function() {
+    return myBooks.length - listLength;
+  };
+
+  var resetBooks = function() {
+    alert("asdf");
+    for (var i = 0; i < booksAdded(); i++) {
+      myBooks.pop();
+    };
+  };
+
+  var addBook = function() {
+    myBooks.push(prompt('Book name'));
+    var booksAdded = booksAdded + 1;
+  };
+</script>
+
+<a href="#" onClick="addBook()">Add book</a><br>
+
+<a href="#" onClick="resetBooks()">Reset list</a><br>
+
+<a href="#" onClick="alert(myBooks.length)" >Length of list</a><br>
+
+<a href="#" onClick="alert(myBooks)" >Books in list</a>
